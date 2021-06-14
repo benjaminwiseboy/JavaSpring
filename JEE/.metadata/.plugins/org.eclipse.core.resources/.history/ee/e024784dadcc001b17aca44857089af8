@@ -1,0 +1,40 @@
+package com.tuto.demo;
+
+import java.util.Date;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.tuto.demo.dao.ClientRepository;
+import com.tuto.demo.dao.CompteRepository;
+import com.tuto.demo.entities.Client;
+import com.tuto.demo.entities.Compte;
+import com.tuto.demo.entities.CompteCourant;
+
+@SpringBootApplication
+public class MaBanqueApplication implements CommandLineRunner {
+
+	@Autowired
+	private ClientRepository clientRepository;
+	@Autowired
+	private CompteRepository compteRepository;
+	public static void main(String[] args) {
+		SpringApplication.run(MaBanqueApplication.class, args);
+		
+		
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		Client c1 = clientRepository.save(new Client ("Benjamin", "Ngabmen"));
+		Client c2 = clientRepository.save(new Client ("Fouda", "grace@gmail.com"));
+
+		Compte cp1 = compteRepository.save(
+				new CompteCourant("c1", new Date(), 90000, c1));
+				
+	}
+
+}

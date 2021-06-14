@@ -1,0 +1,19 @@
+package com.tuto.demo.entities;
+
+import java.util.Date;
+
+public class CompteCourant extends Compte {
+	private double decouvert;
+
+	public CompteCourant() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public CompteCourant(String codeCompte, Date dateCreation, double solde, Client client) {
+		super(codeCompte, dateCreation, solde, client);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

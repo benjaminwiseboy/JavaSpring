@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeLeaf/layout"
+>
+<head>
+<meta charset="utf-8">
+<title>Ma Banque</title>
+<link rel="stylesheet" type="text/css" href="static/style.css" th:href=@{/style.css}>
+</head>
+<body>
+
+</body>
+</html>

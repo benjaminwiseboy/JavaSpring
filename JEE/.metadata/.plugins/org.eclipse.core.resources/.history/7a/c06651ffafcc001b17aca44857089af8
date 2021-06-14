@@ -1,0 +1,42 @@
+package com.tuto.demo.metier;
+
+import org.springframework.data.domain.Page;
+import org.springframework.stereotype.Service;
+
+import com.tuto.demo.entities.Compte;
+import com.tuto.demo.entities.Operation;
+
+@Service
+public class BanqueMetierImpl implements IBanqueMetier {
+
+	@Override
+	public Compte consulterCompte(String codeCpte) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void verser(String codeCpte, double montant) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void retirer(String codeCpte, double montant) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void virement(String codeCpte1, String codeCpt2, double montant) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Page<Operation> listOperation(String codeCpte, int page, int size) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

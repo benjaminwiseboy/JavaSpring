@@ -1,0 +1,5 @@
+package com.tuto.demo.metier;
+
+public interface BanqueMetierImpl {
+
+}
